@@ -16,26 +16,21 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        background: linear-gradient(
-            0deg,
+        background: linear-gradient(0deg,
             rgba(252, 249, 234, 0.5),
-            rgba(252, 249, 234, 0.5)
-          ),
+            rgba(252, 249, 234, 0.5)),
           url("./background2.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: auto;
-        z-index: -1;
         background-attachment: fixed;
 
         .blur {
           height: 100%;
           width: 100%;
-          background: linear-gradient(
-              0deg,
+          background: linear-gradient(0deg,
               rgba(252, 249, 234, 0.5),
-              rgba(252, 249, 234, 0.5)
-            ),
+              rgba(252, 249, 234, 0.5)),
             url("./background2.jpg");
           background-position: center;
           background-repeat: no-repeat;
@@ -59,6 +54,7 @@
           width: 200px;
           margin: auto;
         }
+
         .title {
           font-size: 52px;
           font-weight: 600;
@@ -66,11 +62,13 @@
           margin-bottom: 20px;
           grid-row: 2;
         }
+
         .subtitle {
           font-size: 24px;
           font-weight: 500;
           margin-bottom: 20px;
         }
+
         .subtitle2 {
           font-size: 18px;
           font-weight: 300;
@@ -179,12 +177,14 @@
               background-color: rgb(252, 249, 234);
             }
           }
+
           .left {
             position: relative;
             top: 50%;
             float: left;
             background-color: rgba(252, 249, 234, 0.5);
             cursor: pointer;
+
             &:hover {
               background-color: rgb(252, 249, 234);
             }
@@ -241,13 +241,14 @@
           }
 
           &:hover {
-            opacity: 0.7;
+            background: #41819A;
           }
         }
       }
     }
   }
 }
+
 @media only screen and (max-width: 600px) {
   .container {
     .hamburger {
@@ -266,11 +267,9 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        background: linear-gradient(
-            0deg,
+        background: linear-gradient(0deg,
             rgba(252, 249, 234, 0.5),
-            rgba(252, 249, 234, 0.5)
-          ),
+            rgba(252, 249, 234, 0.5)),
           url("./background2.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -281,11 +280,9 @@
         .blur {
           height: 100%;
           width: 100%;
-          background: linear-gradient(
-              0deg,
+          background: linear-gradient(0deg,
               rgba(252, 249, 234, 0.5),
-              rgba(252, 249, 234, 0.5)
-            ),
+              rgba(252, 249, 234, 0.5)),
             url("./background2.jpg");
           background-position: center;
           background-repeat: no-repeat;
@@ -309,6 +306,7 @@
           width: 100px;
           margin: auto;
         }
+
         .title {
           font-size: 28px;
           font-weight: 600;
@@ -316,11 +314,13 @@
           margin-bottom: 20px;
           grid-row: 2;
         }
+
         .subtitle {
           font-size: 18px;
           font-weight: 500;
           margin-bottom: 20px;
         }
+
         .subtitle2 {
           font-size: 12px;
           font-weight: 300;
@@ -371,7 +371,7 @@
 
       .pinkbean {
         display: none;
-        margin: auto ;
+        margin: auto;
 
         .image {
           background: url("./pinkbean.png");
@@ -397,8 +397,8 @@
           padding: 75px;
           list-style: none;
           text-align: center;
-          
- 
+
+
           li {
             width: 100%;
             margin-bottom: 12px;
@@ -412,7 +412,7 @@
 
       .screenshots {
         grid-column: 1 / span 2;
-        margin:  0 auto;
+        margin: 0 auto;
 
         .image {
           background-image: url("./ss.png");
@@ -435,6 +435,7 @@
               background-color: rgb(252, 249, 234);
             }
           }
+
           .left {
             display: none;
             z-index: -2;
@@ -443,6 +444,7 @@
             float: left;
             background-color: rgba(252, 249, 234, 0.5);
             cursor: pointer;
+
             &:hover {
               background-color: rgb(252, 249, 234);
             }

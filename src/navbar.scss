@@ -7,25 +7,25 @@
   z-index: 0;
   color: white;
   text-align: center;
-  
-  .list{
+
+  .list {
     position: relative;
     bottom: 0;
     height: auto;
     margin: auto;
 
-    .item{
+    .item {
       font-weight: 600;
       font-size: 18px;
       margin: 45px auto;
       cursor: pointer;
 
 
-      &:hover{
+      &:hover {
         color: #f6ecbf;
       }
     }
   }
-  
+
 
 }

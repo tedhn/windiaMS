@@ -38,7 +38,7 @@ export default function Home() {
         },
         "-=700"
       );
-  }, [toggle]);
+  }, [toggle, timeline]);
 
   return (
     <div className="container">
@@ -110,7 +110,6 @@ export default function Home() {
               className="right"
               width="75"
               height="75"
-           
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +123,6 @@ export default function Home() {
               className="left"
               width="75"
               height="75"
-        
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
