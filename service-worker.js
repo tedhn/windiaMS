@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/windiaMS/precache-manifest.78d2680f798446dfd1672668670fed01.js"
+  "/windiaMS/precache-manifest.18baff5a2742b61f0027f816a1f11217.js"
 );
 
 self.addEventListener('message', (event) => {
