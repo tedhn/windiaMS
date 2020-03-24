@@ -62,7 +62,7 @@ export default function Home(props) {
 
         <div className="text">
           <div className="image"></div>
-          <div className="title">Welcome to Windia!</div>
+          <div className="title">Welcome to Windia!!</div>
           <div className="subtitle">A MapleStory v83 Private Server</div>
           <div className="subtitle2">
             Custome Rates / Custome Features / Mac Compatible
