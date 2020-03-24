@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5747d363cab362792e9d66b2eaeb864c",
+    "revision": "33ea82065da750d6ef82a503d7aeb912",
     "url": "/windiaMS/index.html"
   },
   {
-    "revision": "f621650672485f775740",
+    "revision": "e9cf734eebddfd758d60",
     "url": "/windiaMS/static/css/main.646199f1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/windiaMS/static/js/2.a45777bb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f621650672485f775740",
-    "url": "/windiaMS/static/js/main.2861e8d8.chunk.js"
+    "revision": "e9cf734eebddfd758d60",
+    "url": "/windiaMS/static/js/main.2b893116.chunk.js"
   },
   {
     "revision": "5e6c6a8a3b1c33b455d1",
