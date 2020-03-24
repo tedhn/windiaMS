@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/windiaMS/static/css/main.f49aebc2.chunk.css",
-    "main.js": "/windiaMS/static/js/main.68e90063.chunk.js",
-    "main.js.map": "/windiaMS/static/js/main.68e90063.chunk.js.map",
+    "main.css": "/windiaMS/static/css/main.3d68bd65.chunk.css",
+    "main.js": "/windiaMS/static/js/main.9ae3613a.chunk.js",
+    "main.js.map": "/windiaMS/static/js/main.9ae3613a.chunk.js.map",
     "runtime-main.js": "/windiaMS/static/js/runtime-main.9f4d468c.js",
     "runtime-main.js.map": "/windiaMS/static/js/runtime-main.9f4d468c.js.map",
-    "static/js/2.cdb2c4bb.chunk.js": "/windiaMS/static/js/2.cdb2c4bb.chunk.js",
-    "static/js/2.cdb2c4bb.chunk.js.map": "/windiaMS/static/js/2.cdb2c4bb.chunk.js.map",
+    "static/js/2.4ac51e14.chunk.js": "/windiaMS/static/js/2.4ac51e14.chunk.js",
+    "static/js/2.4ac51e14.chunk.js.map": "/windiaMS/static/js/2.4ac51e14.chunk.js.map",
     "index.html": "/windiaMS/index.html",
-    "precache-manifest.58f3893123443b290878f008344e353b.js": "/windiaMS/precache-manifest.58f3893123443b290878f008344e353b.js",
+    "precache-manifest.5bca688faa88cb2c66a8883fa3257113.js": "/windiaMS/precache-manifest.5bca688faa88cb2c66a8883fa3257113.js",
     "service-worker.js": "/windiaMS/service-worker.js",
-    "static/css/main.f49aebc2.chunk.css.map": "/windiaMS/static/css/main.f49aebc2.chunk.css.map",
-    "static/js/2.cdb2c4bb.chunk.js.LICENSE.txt": "/windiaMS/static/js/2.cdb2c4bb.chunk.js.LICENSE.txt",
-    "static/media/home.scss": "/windiaMS/static/media/ss.1d112954.png"
+    "static/css/main.3d68bd65.chunk.css.map": "/windiaMS/static/css/main.3d68bd65.chunk.css.map",
+    "static/js/2.4ac51e14.chunk.js.LICENSE.txt": "/windiaMS/static/js/2.4ac51e14.chunk.js.LICENSE.txt",
+    "static/media/register.scss": "/windiaMS/static/media/background3.21aae8d7.jpg",
+    "static/media/home.scss": "/windiaMS/static/media/ss.1d112954.png",
+    "static/media/vote.scss": "/windiaMS/static/media/background4.f49c4e7e.jpg",
+    "static/media/Account.scss": "/windiaMS/static/media/background7.30747af1.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9f4d468c.js",
-    "static/js/2.cdb2c4bb.chunk.js",
-    "static/css/main.f49aebc2.chunk.css",
-    "static/js/main.68e90063.chunk.js"
+    "static/js/2.4ac51e14.chunk.js",
+    "static/css/main.3d68bd65.chunk.css",
+    "static/js/main.9ae3613a.chunk.js"
   ]
 }
