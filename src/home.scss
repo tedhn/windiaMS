@@ -16,9 +16,11 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        background: linear-gradient(0deg,
+        background: linear-gradient(
+            0deg,
             rgba(252, 249, 234, 0.5),
-            rgba(252, 249, 234, 0.5)),
+            rgba(252, 249, 234, 0.5)
+          ),
           url("./background2.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -28,9 +30,11 @@
         .blur {
           height: 100%;
           width: 100%;
-          background: linear-gradient(0deg,
+          background: linear-gradient(
+              0deg,
               rgba(252, 249, 234, 0.5),
-              rgba(252, 249, 234, 0.5)),
+              rgba(252, 249, 234, 0.5)
+            ),
             url("./background2.jpg");
           background-position: center;
           background-repeat: no-repeat;
@@ -45,7 +49,7 @@
         text-align: center;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -20%);
+        transform: translate(-50%, -45%);
 
         .image {
           background: url("./logo.png");
@@ -78,7 +82,7 @@
 
     .content {
       width: 100vw;
-      background: rgb(252, 249, 234);
+      background: #ffffff;
       display: grid;
       grid-template-columns: 50% 50%;
       grid-template-rows: 400px 100px 700px 100px 800px 400px;
@@ -95,7 +99,7 @@
       }
 
       .title {
-        background: #fcf9ea;
+        background: #ffffff;
         grid-column: 1 / span 2;
         height: 100px;
         margin: auto;
@@ -136,7 +140,7 @@
         margin: auto auto auto 0;
 
         ul {
-          background: #fcf9ea;
+          background: #ffffff;
           box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.5),
             12px 12px 16px rgba(188, 206, 216, 0.5);
           border-radius: 5px;
@@ -193,7 +197,7 @@
       }
 
       .invite {
-        background: #fcf9ea;
+        background: #ffffff;
         box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.5),
           12px 12px 16px rgba(188, 206, 216, 0.5);
         border-radius: 5px;
@@ -237,11 +241,11 @@
             font-weight: 800;
             font-size: 18px;
             line-height: 30px;
-            color: #fcf9ea;
+            color: #ffffff;
           }
 
           &:hover {
-            background: #41819A;
+            background: #41819a;
           }
         }
       }
@@ -267,9 +271,11 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        background: linear-gradient(0deg,
+        background: linear-gradient(
+            0deg,
             rgba(252, 249, 234, 0.5),
-            rgba(252, 249, 234, 0.5)),
+            rgba(252, 249, 234, 0.5)
+          ),
           url("./background2.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -280,9 +286,11 @@
         .blur {
           height: 100%;
           width: 100%;
-          background: linear-gradient(0deg,
+          background: linear-gradient(
+              0deg,
               rgba(252, 249, 234, 0.5),
-              rgba(252, 249, 234, 0.5)),
+              rgba(252, 249, 234, 0.5)
+            ),
             url("./background2.jpg");
           background-position: center;
           background-repeat: no-repeat;
@@ -347,12 +355,12 @@
       }
 
       .title {
-        background: #fcf9ea;
+        background: #ffffff;
         grid-column: 1 / span 2;
         height: 75px;
         margin: auto;
         box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5),
-          12px 12px 16px rgba(188, 206, 216, 0.5);
+          12px 12px 16px rgba(255, 255, 255, 0.5);
         border-radius: 5px;
         width: 70%;
 
@@ -388,16 +396,14 @@
         margin: 50px auto auto auto;
         width: 80%;
 
-
         ul {
-          background: #fcf9ea;
+          background: #ffffff;
           box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.5),
             12px 12px 16px rgba(188, 206, 216, 0.5);
           border-radius: 5px;
           padding: 75px;
           list-style: none;
           text-align: center;
-
 
           li {
             width: 100%;
@@ -453,7 +459,7 @@
       }
 
       .invite {
-        background: #fcf9ea;
+        background: #ffffff;
         box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.5),
           12px 12px 16px rgba(188, 206, 216, 0.5);
         border-radius: 5px;
@@ -497,7 +503,7 @@
             font-weight: 800;
             font-size: 18px;
             line-height: 30px;
-            color: #fcf9ea;
+            color: #ffffff;
           }
 
           &:hover {

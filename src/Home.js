@@ -7,10 +7,15 @@ import Nav from "./navbar";
 
 export default function Home() {
   let [toggle, setToggle] = useState(false);
+  let [loaded, setLoaded] = useState(false);
 
   const timeline = anime.timeline({
     duration: 700,
     easing: "easeOutExpo"
+  });
+
+  window.addEventListener("load", event => {
+    setLoaded(true);
   });
 
   const clickerinos = () => {
@@ -56,7 +61,7 @@ export default function Home() {
         <path d="M15 48H60V54H15V48Z" fill="#07171D" />
       </svg>
 
-      <Nav />
+      <Nav loaded={loaded} />
 
       <div className="home">
         <div className="background">

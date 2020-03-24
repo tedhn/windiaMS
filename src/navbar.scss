@@ -14,18 +14,30 @@
     height: auto;
     margin: auto;
 
-    .item {
-      font-weight: 600;
-      font-size: 18px;
-      margin: 45px auto;
-      cursor: pointer;
+    a {
+      text-decoration: none;
+      color: white;
 
+      .item {
+        font-weight: 600;
+        font-size: 18px;
+        margin: 45px auto;
+        cursor: pointer;
 
-      &:hover {
-        color: #f6ecbf;
+        &:hover {
+          color: #ffb52c;
+        }
       }
     }
+
+    .logo {
+      margin: 45px auto;
+      height: 120px;
+      width: 120px;
+    }
   }
+}
 
-
+.noShow {
+  visibility: none;
 }

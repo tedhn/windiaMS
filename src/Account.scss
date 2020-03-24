@@ -1,0 +1,193 @@
+@media only screen and (min-width: 600px) {
+  .container {
+    .hamburger {
+      position: fixed;
+      top: 20px;
+      right: 50px;
+      z-index: 3;
+      cursor: pointer;
+    }
+    .account {
+      .background {
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(
+            0deg,
+            rgba(252, 249, 234, 0.5),
+            rgba(252, 249, 234, 0.5)
+          ),
+          url("./background7.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .blur {
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(
+              0deg,
+              rgba(252, 249, 234, 0.5),
+              rgba(252, 249, 234, 0.5)
+            ),
+            url("./background7.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          filter: blur(1px);
+        }
+      }
+
+      .panel {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .main {
+          display: flex;
+          flex-direction: column;
+
+          .title {
+            font-weight: 700;
+            font-size: 48px;
+            margin-bottom: 40px;
+          }
+          .subtitle {
+            font-weight: 300;
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+          .subtitle2 {
+            font-weight: 300;
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+
+          .button {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+
+            .p {
+              background: #305f72;
+              box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5),
+                12px 12px 16px rgba(188, 206, 216, 0.5);
+              border-radius: 5px;
+              margin: 10px;
+
+              div {
+                padding: 10px 15px;
+                font-weight: 800;
+                font-size: 15px;
+                color: white;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    .hamburger {
+      position: fixed;
+      top: 20px;
+      right: 50px;
+      z-index: 3;
+      cursor: pointer;
+    }
+    .account {
+      .background {
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(
+            0deg,
+            rgba(252, 249, 234, 0.5),
+            rgba(252, 249, 234, 0.5)
+          ),
+          url("./background7.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .blur {
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(
+              0deg,
+              rgba(252, 249, 234, 0.5),
+              rgba(252, 249, 234, 0.5)
+            ),
+            url("./background7.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          filter: blur(1px);
+        }
+      }
+
+      .panel {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .main {
+          display: flex;
+          flex-direction: column;
+
+          .title {
+            font-weight: 700;
+            font-size: 32px;
+            margin-bottom: 40px;
+          }
+          .subtitle {
+            font-weight: 300;
+            font-size: 15px;
+            margin-bottom: 10px;
+          }
+          .subtitle2 {
+            font-weight: 300;
+            font-size: 15px;
+            margin-bottom: 20px;
+          }
+
+          .button {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+
+            .p {
+              background: #305f72;
+              box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5),
+                12px 12px 16px rgba(188, 206, 216, 0.5);
+              border-radius: 5px;
+              margin: 10px;
+
+              div {
+                padding: 10px 15px;
+                font-weight: 800;
+                font-size: 15px;
+                color: white;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+
+              &:hover {
+                background: #41819a;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

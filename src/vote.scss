@@ -16,9 +16,11 @@
         position: absolute;
         height: 100vh;
         width: 100vw;
-        background: linear-gradient(0deg,
+        background: linear-gradient(
+            0deg,
             rgba(252, 249, 234, 0.5),
-            rgba(252, 249, 234, 0.5)),
+            rgba(252, 249, 234, 0.5)
+          ),
           url("./background4.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -28,9 +30,11 @@
         .blur {
           height: 100%;
           width: 100%;
-          background: linear-gradient(0deg,
+          background: linear-gradient(
+              0deg,
               rgba(252, 249, 234, 0.5),
-              rgba(252, 249, 234, 0.5)),
+              rgba(252, 249, 234, 0.5)
+            ),
             url("./background4.jpg");
           background-position: center;
           background-repeat: no-repeat;
@@ -51,7 +55,7 @@
           font-size: 52px;
           font-weight: 600;
           letter-spacing: 5px;
-          margin-bottom: 20px
+          margin-bottom: 20px;
         }
 
         .subtitle {
@@ -71,8 +75,9 @@
         }
 
         .button {
-          background: #305F72;
-          box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5), 9px 9px 16px rgba(48, 95, 114, 0.5);
+          background: #305f72;
+          box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5),
+            9px 9px 16px rgba(48, 95, 114, 0.5);
           border-radius: 5px;
           margin: auto;
           width: 100px;
@@ -87,21 +92,16 @@
             font-weight: 800;
             font-size: 18px;
             line-height: 30px;
-            color: #FCF9EA;
+            color: #ffffff;
           }
 
           &:hover {
-            background: #41819A;
+            background: #41819a;
           }
         }
       }
     }
-
-
-
-
   }
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -122,9 +122,11 @@
         position: absolute;
         height: 100vh;
         width: 100vw;
-        background: linear-gradient(0deg,
+        background: linear-gradient(
+            0deg,
             rgba(252, 249, 234, 0.5),
-            rgba(252, 249, 234, 0.5)),
+            rgba(252, 249, 234, 0.5)
+          ),
           url("./background4.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -134,9 +136,11 @@
         .blur {
           height: 100%;
           width: 100%;
-          background: linear-gradient(0deg,
+          background: linear-gradient(
+              0deg,
               rgba(252, 249, 234, 0.5),
-              rgba(252, 249, 234, 0.5)),
+              rgba(252, 249, 234, 0.5)
+            ),
             url("./background4.jpg");
           background-position: center;
           background-repeat: no-repeat;
@@ -158,7 +162,7 @@
           font-size: 22px;
           font-weight: 600;
           letter-spacing: 5px;
-          margin-bottom: 20px
+          margin-bottom: 20px;
         }
 
         .subtitle {
@@ -178,8 +182,9 @@
         }
 
         .button {
-          background: #305F72;
-          box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5), 9px 9px 16px rgba(48, 95, 114, 0.5);
+          background: #305f72;
+          box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5),
+            9px 9px 16px rgba(48, 95, 114, 0.5);
           border-radius: 5px;
           margin: auto;
           width: 100px;
@@ -194,19 +199,14 @@
             font-weight: 800;
             font-size: 13px;
             line-height: 30px;
-            color: #FCF9EA;
+            color: #ffffff;
           }
 
           &:hover {
-            background: #41819A;
+            background: #41819a;
           }
         }
       }
     }
-
-
-
-
   }
-
 }

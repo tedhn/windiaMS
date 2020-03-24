@@ -24,7 +24,7 @@
             rgba(252, 249, 234, 0.5),
             rgba(252, 249, 234, 0.5)
           ),
-          url("./background.jpg");
+          url("./background3.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -37,7 +37,7 @@
               rgba(252, 249, 234, 0.5),
               rgba(252, 249, 234, 0.5)
             ),
-            url("./background.jpg");
+            url("./background3.jpg");
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -60,9 +60,9 @@
           text-align: center;
 
           .text {
-            font-size: 52px;
+            font-size: 46px;
             font-weight: 800;
-            margin-bottom: 95px;
+            margin-bottom: 55px;
           }
 
           .username {
@@ -82,6 +82,21 @@
           }
 
           .password {
+            height: 50px;
+            width: 60%;
+            margin: 0 auto 25px auto;
+            box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5),
+              12px 12px 16px rgba(188, 206, 216, 0.5);
+            border-radius: 5px;
+            padding: 0 20px;
+            outline: none;
+            border: none;
+            background-color: #ffffff;
+            color: #305f72;
+            font-size: 13px;
+            font-weight: 600;
+          }
+          .email {
             height: 50px;
             width: 60%;
             margin: 0 auto 25px auto;
@@ -205,9 +220,9 @@
           text-align: center;
 
           .text {
-            font-size: 52px;
+            font-size: 36px;
             font-weight: 800;
-            margin-bottom: 95px;
+            margin-bottom: 55px;
           }
 
           .username {
@@ -227,6 +242,22 @@
           }
 
           .password {
+            height: 50px;
+            width: 60%;
+            margin: 0 auto 25px auto;
+            box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5),
+              12px 12px 16px rgba(188, 206, 216, 0.5);
+            border-radius: 5px;
+            padding: 0 20px;
+            outline: none;
+            border: none;
+            background-color: #ffffff;
+            color: #305f72;
+            font-size: 13px;
+            font-weight: 600;
+          }
+
+          .email {
             height: 50px;
             width: 60%;
             margin: 0 auto 25px auto;
