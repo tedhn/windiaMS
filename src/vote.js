@@ -7,7 +7,11 @@ import Nav from "./navbar";
 
 export default function Vote() {
   let [toggle, setToggle] = useState(false);
+  let [loaded, setLoaded] = useState(false);
 
+  window.addEventListener("load", event => {
+    setLoaded(true);
+  });
   const timeline = anime.timeline({
     duration: 700,
     easing: "easeOutExpo"
@@ -49,7 +53,7 @@ export default function Vote() {
         <path d="M15 48H60V54H15V48Z" fill="#07171D" />
       </svg>
 
-      <Nav />
+      <Nav loaded={loaded} />
 
       <div className="vote">
         <div className="background">

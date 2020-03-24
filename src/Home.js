@@ -9,13 +9,12 @@ export default function Home() {
   let [toggle, setToggle] = useState(false);
   let [loaded, setLoaded] = useState(false);
 
+  window.addEventListener("load", event => {
+    setLoaded(true);
+  });
   const timeline = anime.timeline({
     duration: 700,
     easing: "easeOutExpo"
-  });
-
-  window.addEventListener("load", event => {
-    setLoaded(true);
   });
 
   const clickerinos = () => {

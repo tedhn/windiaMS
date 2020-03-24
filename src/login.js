@@ -6,7 +6,11 @@ import Nav from "./navbar";
 
 export default function Login() {
   let [toggle, setToggle] = useState(false);
+  let [loaded, setLoaded] = useState(false);
 
+  window.addEventListener("load", event => {
+    setLoaded(true);
+  });
   const timeline = anime.timeline({
     duration: 700,
     easing: "easeOutExpo"
@@ -47,7 +51,7 @@ export default function Login() {
         <path d="M15 33H60V39H15V33Z" fill="#07171D" />
         <path d="M15 48H60V54H15V48Z" fill="#07171D" />
       </svg>
-      <Nav />
+      <Nav loaded={loaded} />
       <div className="login">
         <div className="background">
           <div className="blur"></div>

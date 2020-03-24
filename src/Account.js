@@ -10,10 +10,13 @@ import Nav from "./navbar";
 
 export default function Account() {
   let [toggle, setToggle] = useState(false);
-
+  let [loaded, setLoaded] = useState(false);
   const timeline = anime.timeline({
     duration: 700,
     easing: "easeOutExpo"
+  });
+  window.addEventListener("load", event => {
+    setLoaded(true);
   });
 
   const clickerinos = () => {
@@ -50,9 +53,8 @@ export default function Account() {
         <path d="M15 33H60V39H15V33Z" fill="#07171D" />
         <path d="M15 48H60V54H15V48Z" fill="#07171D" />
       </svg>
-      <Nav />
+      <Nav loaded={loaded} />
       <div className="account">
-        {" "}
         <div className="background">
           <div className="blur"></div>
         </div>
