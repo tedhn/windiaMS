@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/windiaMS/static/css/main.646199f1.chunk.css",
+    "main.css": "/windiaMS/static/css/main.08e31b85.chunk.css",
     "main.js": "/windiaMS/static/js/main.2b893116.chunk.js",
     "main.js.map": "/windiaMS/static/js/main.2b893116.chunk.js.map",
     "runtime-main.js": "/windiaMS/static/js/runtime-main.9f4d468c.js",
@@ -8,9 +8,9 @@
     "static/js/2.a45777bb.chunk.js": "/windiaMS/static/js/2.a45777bb.chunk.js",
     "static/js/2.a45777bb.chunk.js.map": "/windiaMS/static/js/2.a45777bb.chunk.js.map",
     "index.html": "/windiaMS/index.html",
-    "precache-manifest.87e262af290f6fb07fe961de887c1ee0.js": "/windiaMS/precache-manifest.87e262af290f6fb07fe961de887c1ee0.js",
+    "precache-manifest.6bc4abbb821934db8bf9e390b8efa642.js": "/windiaMS/precache-manifest.6bc4abbb821934db8bf9e390b8efa642.js",
     "service-worker.js": "/windiaMS/service-worker.js",
-    "static/css/main.646199f1.chunk.css.map": "/windiaMS/static/css/main.646199f1.chunk.css.map",
+    "static/css/main.08e31b85.chunk.css.map": "/windiaMS/static/css/main.08e31b85.chunk.css.map",
     "static/js/2.a45777bb.chunk.js.LICENSE.txt": "/windiaMS/static/js/2.a45777bb.chunk.js.LICENSE.txt",
     "static/media/register.scss": "/windiaMS/static/media/background3.21aae8d7.jpg",
     "static/media/home.scss": "/windiaMS/static/media/ss.1d112954.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.9f4d468c.js",
     "static/js/2.a45777bb.chunk.js",
-    "static/css/main.646199f1.chunk.css",
+    "static/css/main.08e31b85.chunk.css",
     "static/js/main.2b893116.chunk.js"
   ]
 }
