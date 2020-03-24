@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/windiaMS/static/css/main.646199f1.chunk.css",
-    "main.js": "/windiaMS/static/js/main.26147615.chunk.js",
-    "main.js.map": "/windiaMS/static/js/main.26147615.chunk.js.map",
+    "main.js": "/windiaMS/static/js/main.2861e8d8.chunk.js",
+    "main.js.map": "/windiaMS/static/js/main.2861e8d8.chunk.js.map",
     "runtime-main.js": "/windiaMS/static/js/runtime-main.9f4d468c.js",
     "runtime-main.js.map": "/windiaMS/static/js/runtime-main.9f4d468c.js.map",
     "static/js/2.a45777bb.chunk.js": "/windiaMS/static/js/2.a45777bb.chunk.js",
     "static/js/2.a45777bb.chunk.js.map": "/windiaMS/static/js/2.a45777bb.chunk.js.map",
     "index.html": "/windiaMS/index.html",
-    "precache-manifest.18baff5a2742b61f0027f816a1f11217.js": "/windiaMS/precache-manifest.18baff5a2742b61f0027f816a1f11217.js",
+    "precache-manifest.ab7405dc00ddb64f0cce1a7add98f544.js": "/windiaMS/precache-manifest.ab7405dc00ddb64f0cce1a7add98f544.js",
     "service-worker.js": "/windiaMS/service-worker.js",
     "static/css/main.646199f1.chunk.css.map": "/windiaMS/static/css/main.646199f1.chunk.css.map",
     "static/js/2.a45777bb.chunk.js.LICENSE.txt": "/windiaMS/static/js/2.a45777bb.chunk.js.LICENSE.txt",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.9f4d468c.js",
     "static/js/2.a45777bb.chunk.js",
     "static/css/main.646199f1.chunk.css",
-    "static/js/main.26147615.chunk.js"
+    "static/js/main.2861e8d8.chunk.js"
   ]
 }
