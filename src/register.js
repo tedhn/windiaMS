@@ -49,7 +49,7 @@ export default function Register(props) {
         <path d="M15 48H60V54H15V48Z" fill="#07171D" />
       </svg>
       <Nav loaded={props.loaded} />
-      <div className="login">
+      <div className="register">
         <div className="background">
           <div className="blur"></div>
         </div>
