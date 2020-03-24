@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 import { Switch, Route, BrowserRouter } from "react-router-dom";
@@ -11,29 +11,35 @@ import Register from "./register";
 import Account from "./Account";
 
 function App() {
+  let [loaded, setLoaded] = useState(false);
+
+  window.addEventListener("load", event => {
+    setLoaded(true);
+  });
+
   return (
     <div>
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + "/"}>
-          <Home />
+          <Home loaded={loaded} />
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Vote"}>
-          <Vote />
+          <Vote loaded={loaded} />
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Download"}>
           <div>page in progess</div>
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Login"}>
-          <Login />
+          <Login loaded={loaded} />
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Donate"}>
           <div>page in progess</div>
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Register"}>
-          <Register />
+          <Register loaded={loaded} />
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Account"}>
-          <Account />
+          <Account loaded={loaded} />
         </Route>
       </Switch>
     </div>

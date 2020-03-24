@@ -8,15 +8,12 @@ import Pass from "./Account-pass";
 import Pic from "./Account-pic";
 import Nav from "./navbar";
 
-export default function Account() {
+export default function Account(props) {
   let [toggle, setToggle] = useState(false);
-  let [loaded, setLoaded] = useState(false);
+
   const timeline = anime.timeline({
     duration: 700,
     easing: "easeOutExpo"
-  });
-  window.addEventListener("load", event => {
-    setLoaded(true);
   });
 
   const clickerinos = () => {
@@ -38,6 +35,7 @@ export default function Account() {
         "-=700"
       );
   }, [toggle, timeline]);
+
   return (
     <div className="container">
       <svg
@@ -53,7 +51,7 @@ export default function Account() {
         <path d="M15 33H60V39H15V33Z" fill="#07171D" />
         <path d="M15 48H60V54H15V48Z" fill="#07171D" />
       </svg>
-      <Nav loaded={loaded} />
+      <Nav loaded={props.loaded} />
       <div className="account">
         <div className="background">
           <div className="blur"></div>

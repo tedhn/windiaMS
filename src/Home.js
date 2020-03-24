@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
 import anime from "animejs";
-
 import "./home.scss";
 
 import Nav from "./navbar";
 
-export default function Home() {
+export default function Home(props) {
   let [toggle, setToggle] = useState(false);
-  let [loaded, setLoaded] = useState(false);
 
-  window.addEventListener("load", event => {
-    setLoaded(true);
-  });
   const timeline = anime.timeline({
     duration: 700,
     easing: "easeOutExpo"
@@ -29,16 +24,16 @@ export default function Home() {
       })
       .add(
         {
-          targets: ".hamburger",
-          translateX: toggle ? -300 : 0,
-          rotate: toggle ? -90 : 0
+          targets: ".content",
+          translateX: toggle ? -300 : 0
         },
         "-=700"
       )
       .add(
         {
-          targets: ".content",
-          translateX: toggle ? -300 : 0
+          targets: ".hamburger",
+          translateX: toggle ? -300 : 0,
+          rotate: toggle ? -90 : 0
         },
         "-=700"
       );
@@ -59,9 +54,7 @@ export default function Home() {
         <path d="M15 33H60V39H15V33Z" fill="#07171D" />
         <path d="M15 48H60V54H15V48Z" fill="#07171D" />
       </svg>
-
-      <Nav loaded={loaded} />
-
+      <Nav loaded={props.loaded} />
       <div className="home">
         <div className="background">
           <div className="blur"></div>
