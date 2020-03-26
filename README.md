@@ -8,7 +8,7 @@ Finished Vote / Login Page
 Finished Account / Register Page\
  Nav bar working\
 Fixed nav bar issues hehe\
-Fixed more nav bar issues hehehe\
+Fixed more nav bar issues hehehe
 
 #### 3/26/2020
 Added animations
