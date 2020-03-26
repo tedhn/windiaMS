@@ -5,10 +5,10 @@ Finished Landing Page
 Finished Vote / Login Page
 
 #### 3/25/2020
-Finished Account / Register Page \n
- Nav bar working \n
-Fixed nav bar issues hehe \n
-Fixed more nav bar issues hehehe \n
+Finished Account / Register Page\
+ Nav bar working\
+Fixed nav bar issues hehe\
+Fixed more nav bar issues hehehe\
 
 #### 3/26/2020
 Added animations
