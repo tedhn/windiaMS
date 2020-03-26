@@ -9,6 +9,8 @@ import Vote from "./vote";
 import Login from "./login";
 import Register from "./register";
 import Account from "./Account";
+import Pass from "./Account-pass";
+import Pic from "./Account-pic";
 
 function App() {
   let [loaded, setLoaded] = useState(false);
@@ -29,6 +31,9 @@ function App() {
         <Route exact path={process.env.PUBLIC_URL + "/Download"}>
           <div>page in progess</div>
         </Route>
+        <Route exact path={process.env.PUBLIC_URL + "/Account"}>
+          <Account loaded={loaded} />
+        </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Login"}>
           <Login loaded={loaded} />
         </Route>
@@ -38,8 +43,11 @@ function App() {
         <Route exact path={process.env.PUBLIC_URL + "/Register"}>
           <Register loaded={loaded} />
         </Route>
-        <Route exact path={process.env.PUBLIC_URL + "/Account"}>
-          <Account loaded={loaded} />
+        <Route exact path={process.env.PUBLIC_URL + "/Donate"}>
+          <Pass loaded={loaded} />
+        </Route>
+        <Route exact path={process.env.PUBLIC_URL + "/Register"}>
+          <Pic loaded={loaded} />
         </Route>
       </Switch>
     </div>

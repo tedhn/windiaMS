@@ -57,7 +57,7 @@ export default function Account(props) {
           <div className="blur"></div>
         </div>
         <div className="panel">
-          <Main />
+          <Pass />
         </div>
       </div>
     </div>

@@ -14,8 +14,10 @@
 
       .background {
         position: absolute;
+        display: flex;
         height: 100%;
         width: 100%;
+        z-index: -1;
         background: linear-gradient(
             0deg,
             rgba(252, 249, 234, 0.5),
@@ -32,8 +34,8 @@
           width: 100%;
           background: linear-gradient(
               0deg,
-              rgba(252, 249, 234, 0.5),
-              rgba(252, 249, 234, 0.5)
+              rgba(255, 255, 255, 0.6),
+              rgba(255, 255, 255, 0.6)
             ),
             url("./images/background2.jpg");
           background-position: center;
@@ -43,20 +45,19 @@
         }
       }
 
-      .text {
-        height: auto;
-        position: absolute;
+      #text {
+        display: flex;
         text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -45%);
-
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
         .image {
           background: url("./images/logo.png");
           background-size: contain;
           height: 200px;
           width: 200px;
-          margin: auto;
+          margin-top: 200px;
         }
 
         .title {
@@ -299,20 +300,20 @@
         }
       }
 
-      .text {
-        height: auto;
-        position: absolute;
+      #text {
+        display: flex;
         text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -30%);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
 
         .image {
           background: url("./images/logo.png");
           background-size: contain;
           height: 100px;
           width: 100px;
-          margin: auto;
+          margin-top: 40vh;
         }
 
         .title {
@@ -338,7 +339,7 @@
 
     .content {
       width: 100vw;
-      background: rgb(252, 249, 234);
+      background: white;
       display: grid;
       grid-column: 100%;
       grid-template-rows: 400px 100px 500px 100px 300px 400px;

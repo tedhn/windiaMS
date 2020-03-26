@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from "react";
 import anime from "animejs";
+import AOS from "aos";
 import "./home.scss";
 
 import Nav from "./navbar";
 
 export default function Home(props) {
   let [toggle, setToggle] = useState(false);
+
+  AOS.init({
+    duration: 700,
+    easing: "ease",
+    mirror: true,
+    anchorPlacement: "top-bottom"
+  });
 
   const timeline = anime.timeline({
     duration: 700,
@@ -60,7 +68,12 @@ export default function Home(props) {
           <div className="blur"></div>
         </div>
 
-        <div className="text">
+        <div
+          id="text"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-mirror="false"
+        >
           <div className="image"></div>
           <div className="title">Welcome to Windia!!</div>
           <div className="subtitle">A MapleStory v83 Private Server</div>
@@ -70,21 +83,21 @@ export default function Home(props) {
         </div>
       </div>
       <div className="content">
-        <div className="goals">
+        <div className="goals" data-aos="fade-up" data-aos-mirror="false">
           WindiaMS is designed with power efficiency in mind. Featuring
           mechanics from modern MapleStory, active development, anticheat and
           much more.
         </div>
 
-        <div className="title">
+        <div className="title" data-aos="fade-up">
           <div>Unique Features</div>
         </div>
 
-        <div className="pinkbean">
+        <div className="pinkbean" data-aos="fade-right">
           <div className="image"></div>
         </div>
 
-        <div className="table">
+        <div className="table" data-aos="fade-left">
           <ul>
             <li>Mac / Linux Compability</li>
             <li>
@@ -97,11 +110,11 @@ export default function Home(props) {
           </ul>
         </div>
 
-        <div className="title">
+        <div className="title" data-aos="fade-down">
           <div>Screenshots</div>
         </div>
 
-        <div className="screenshots">
+        <div className="screenshots" data-aos="zoom-in-up">
           <div className="image">
             <svg
               className="right"
@@ -132,7 +145,7 @@ export default function Home(props) {
           </div>
         </div>
 
-        <div className="invite">
+        <div className="invite" data-aos="fade-up">
           <div className="text">So what are you waiting for ?</div>
           <div className="text2">Start your adventure today!!</div>
           <div className="button">

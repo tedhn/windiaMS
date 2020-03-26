@@ -1,15 +1,23 @@
 import React, { useState, useEffect } from "react";
 import anime from "animejs";
 import "./login.scss";
-
+import AOS from "aos";
 import Nav from "./navbar";
 
 export default function Login(props) {
   let [toggle, setToggle] = useState(false);
+  let [valid, setValid] = useState(true);
 
   const timeline = anime.timeline({
     duration: 700,
     easing: "easeOutExpo"
+  });
+
+  AOS.init({
+    duration: 700,
+    easing: "ease",
+    mirror: true,
+    anchorPlacement: "top-bottom"
   });
 
   const clickerinos = () => {
@@ -34,7 +42,6 @@ export default function Login(props) {
 
   return (
     <div className="container">
-      {" "}
       <svg
         className="hamburger"
         onClick={clickerinos}
@@ -56,14 +63,32 @@ export default function Login(props) {
 
         <div className="panel">
           <div className="input">
-            <div className="text">Login</div>
-            <input className="username" placeholder="Username" />
-            <input className="password" placeholder="Password" />
+            <div className="text" data-aos="fade-down">
+              Login
+            </div>
+            <input
+              className="username"
+              placeholder="Username"
+              data-aos="fade-left"
+            />
+            <input
+              className="password"
+              placeholder="Password"
+              data-aos="fade-left"
+            />
 
-            <div className="button">
+            <div
+              className="button"
+              data-aos="fade-up"
+              data-aos-anchor=".password"
+            >
               <div>Log in</div>
             </div>
-            <div className="link">
+            <div
+              className="link"
+              data-aos="fade-up"
+              data-aos-anchor=".password"
+            >
               Dont have an account ? Register <span>here</span>
             </div>
           </div>

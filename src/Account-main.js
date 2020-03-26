@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Main() {
   return (
@@ -11,10 +12,14 @@ export default function Main() {
 
       <div className="button">
         <div className="p">
-          <div>Reset Password</div>
+          <NavLink exact to={process.env.PUBLIC_URL + "/resetPassword"}>
+            <div>Reset Password</div>
+          </NavLink>
         </div>
         <div className="p">
-          <div>Reset PIC</div>
+          <NavLink exact to={process.env.PUBLIC_URL + "/resetPIC"}>
+            <div>Reset PIC</div>
+          </NavLink>
         </div>
       </div>
     </div>

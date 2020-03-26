@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import anime from "animejs";
-
+import AOS from "aos";
 import "./register.scss";
 import Nav from "./navbar";
 
@@ -10,6 +10,13 @@ export default function Register(props) {
   const timeline = anime.timeline({
     duration: 700,
     easing: "easeOutExpo"
+  });
+
+  AOS.init({
+    duration: 1000,
+    easing: "ease",
+    mirror: true,
+    anchorPlacement: "top-bottom"
   });
 
   const clickerinos = () => {
@@ -56,15 +63,38 @@ export default function Register(props) {
 
         <div className="panel">
           <div className="input">
-            <div className="text">Register</div>
-            <input className="username" placeholder="Username" />
-            <input className="password" placeholder="Password" />
-            <input className="email" placeholder="Email" />
+            <div className="text" data-aos="fade-down">
+              Register
+            </div>
+            <input
+              className="username"
+              placeholder="Username"
+              data-aos="fade-right"
+            />
+            <input
+              className="password"
+              placeholder="Password"
+              data-aos="fade-right"
+            />
+            <input
+              className="email"
+              placeholder="Email"
+              data-aos="fade-right"
+              data-aos-anchor=".password"
+            />
 
-            <div className="button">
+            <div
+              className="button"
+              data-aos="fade-up"
+              data-aos-anchor=".password"
+            >
               <div>Sign up</div>
             </div>
-            <div className="link">
+            <div
+              className="link"
+              data-aos="fade-up"
+              data-aos-anchor=".password"
+            >
               Already have an account ? Log in <span>here</span>
             </div>
           </div>

@@ -62,6 +62,30 @@
             font-size: 20px;
             margin-bottom: 20px;
           }
+          .panel2 {
+            margin-bottom: 60px;
+            .input {
+              height: 50px;
+              width: 60%;
+              margin: 0 auto 25px auto;
+              box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5),
+                12px 12px 16px rgba(188, 206, 216, 0.5);
+              border-radius: 5px;
+              padding: 0 20px;
+              outline: none;
+              border: none;
+              background-color: #ffffff;
+              color: #305f72;
+              font-size: 13px;
+              font-weight: 600;
+
+              .text {
+                font-size: 52px;
+                font-weight: 800;
+                margin-bottom: 95px;
+              }
+            }
+          }
 
           .button {
             margin: auto;
@@ -75,15 +99,23 @@
               border-radius: 5px;
               margin: 10px;
 
-              div {
-                padding: 10px 15px;
-                font-weight: 800;
-                font-size: 15px;
-                color: white;
-                position: relative;
+              .link {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                text-decoration: none;
+
+                div {
+                  padding: 10px 15px;
+                  font-weight: 800;
+                  font-size: 15px;
+                  color: white;
+                  position: relative;
+                }
+              }
+
+              &:hover {
+                opacity: 0.8;
               }
             }
           }
@@ -158,6 +190,31 @@
             margin-bottom: 20px;
           }
 
+          .panel2 {
+            margin-bottom: 30px;
+            .input {
+              height: 50px;
+              width: 60%;
+              margin: 0 auto 25px auto;
+              box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5),
+                12px 12px 16px rgba(188, 206, 216, 0.5);
+              border-radius: 5px;
+              padding: 0 20px;
+              outline: none;
+              border: none;
+              background-color: #ffffff;
+              color: #305f72;
+              font-size: 13px;
+              font-weight: 600;
+
+              .text {
+                font-size: 32px;
+                font-weight: 800;
+                margin-bottom: 95px;
+              }
+            }
+          }
+
           .button {
             margin: auto;
             display: flex;
@@ -170,19 +227,18 @@
               border-radius: 5px;
               margin: 10px;
 
-              div {
-                padding: 10px 15px;
-                font-weight: 800;
-                font-size: 15px;
-                color: white;
-                position: relative;
+              .link {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-              }
 
-              &:hover {
-                background: #41819a;
+                div {
+                  padding: 10px 15px;
+                  font-weight: 800;
+                  font-size: 12px;
+                  color: white;
+                  position: relative;
+                }
               }
             }
           }
