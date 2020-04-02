@@ -4,6 +4,7 @@ import AOS from "aos";
 import "./home.scss";
 
 import Nav from "./navbar";
+import { NavLink } from "react-router-dom";
 
 export default function Home(props) {
   let [toggle, setToggle] = useState(false);
@@ -11,7 +12,7 @@ export default function Home(props) {
   AOS.init({
     duration: 700,
     easing: "ease",
-    mirror: true,
+    mirror: false,
     anchorPlacement: "top-bottom"
   });
 
@@ -62,7 +63,7 @@ export default function Home(props) {
         <path d="M15 33H60V39H15V33Z" fill="#07171D" />
         <path d="M15 48H60V54H15V48Z" fill="#07171D" />
       </svg>
-      <Nav loaded={props.loaded} />
+      <Nav loaded={props.loaded} verified={props.verified} />
       <div className="home">
         <div className="background">
           <div className="blur"></div>
@@ -150,6 +151,30 @@ export default function Home(props) {
           <div className="text2">Start your adventure today!!</div>
           <div className="button">
             <div>Get Started</div>
+          </div>
+        </div>
+
+        <div className="footer">
+          <ul>
+            <NavLink exact to={process.env.PUBLIC_URL + "/"} className="a">
+              FAQ
+            </NavLink>
+
+            <NavLink exact to={process.env.PUBLIC_URL + "/"} className="a">
+              ToS & Rules
+            </NavLink>
+
+            <NavLink exact to={process.env.PUBLIC_URL + "/"} className="a">
+              Guides
+            </NavLink>
+
+            <NavLink exact to={process.env.PUBLIC_URL + "/"} className="a">
+              Vote for Us
+            </NavLink>
+          </ul>
+
+          <div className="rights">
+            © 2019 - 2020 WindiaMS. All Rights Reserved
           </div>
         </div>
       </div>

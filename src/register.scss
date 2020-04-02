@@ -145,11 +145,14 @@
             font-weight: 300px;
             margin: 10px;
 
-            span {
-              padding: 5px;
-              font-weight: 600;
-              text-decoration: underline;
-              cursor: pointer;
+            .a {
+              color: #305f72;
+              span {
+                padding: 5px;
+                font-weight: 600;
+                text-decoration: underline;
+                cursor: pointer;
+              }
             }
           }
         }
@@ -306,11 +309,14 @@
             font-weight: 300px;
             margin: 10px;
 
-            span {
-              padding: 5px;
-              font-weight: 600;
-              text-decoration: underline;
-              cursor: pointer;
+            .a {
+              color: #305f72;
+              span {
+                padding: 5px;
+                font-weight: 600;
+                text-decoration: underline;
+                cursor: pointer;
+              }
             }
           }
         }

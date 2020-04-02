@@ -4,9 +4,13 @@ import "./login.scss";
 import AOS from "aos";
 import Nav from "./navbar";
 
+import { NavLink } from "react-router-dom";
+
 export default function Login(props) {
   let [toggle, setToggle] = useState(false);
-  let [valid, setValid] = useState(true);
+  let [username, setUsername] = useState("");
+  let [password, setPassword] = useState("");
+  let [valid, setValid] = useState(false);
 
   const timeline = anime.timeline({
     duration: 700,
@@ -22,6 +26,17 @@ export default function Login(props) {
 
   const clickerinos = () => {
     setToggle(!toggle);
+  };
+  const updateUsername = e => {
+    setUsername(e.target.value);
+  };
+  const updatePassword = e => {
+    setPassword(e.target.value);
+  };
+
+  const checkvalid = () => {
+    // checks with api //
+    // returns true false //
   };
 
   useEffect(() => {
@@ -55,12 +70,11 @@ export default function Login(props) {
         <path d="M15 33H60V39H15V33Z" fill="#07171D" />
         <path d="M15 48H60V54H15V48Z" fill="#07171D" />
       </svg>
-      <Nav loaded={props.loaded} />
+      <Nav loaded={props.loaded} verified={props.verified} />
       <div className="login">
         <div className="background">
           <div className="blur"></div>
         </div>
-
         <div className="panel">
           <div className="input">
             <div className="text" data-aos="fade-down">
@@ -70,26 +84,43 @@ export default function Login(props) {
               className="username"
               placeholder="Username"
               data-aos="fade-left"
+              type="text"
+              onChange={updateUsername}
             />
             <input
               className="password"
               placeholder="Password"
               data-aos="fade-left"
+              type="password"
+              onChange={updatePassword}
             />
-
-            <div
-              className="button"
-              data-aos="fade-up"
-              data-aos-anchor=".password"
+            <NavLink
+              exact
+              to={process.env.PUBLIC_URL + "/Account"}
+              className="a"
             >
-              <div>Log in</div>
-            </div>
+              <div
+                className="button"
+                data-aos="fade-up"
+                data-aos-anchor=".password"
+                onClick={checkvalid}
+              >
+                <div>Login</div>
+              </div>
+            </NavLink>
             <div
               className="link"
               data-aos="fade-up"
               data-aos-anchor=".password"
             >
-              Dont have an account ? Register <span>here</span>
+              Dont have an account ? Register
+              <NavLink
+                exact
+                to={process.env.PUBLIC_URL + "/Register"}
+                className="a"
+              >
+                <span>here</span>
+              </NavLink>
             </div>
           </div>
         </div>

@@ -4,15 +4,13 @@ import { NavLink } from "react-router-dom";
 import "./navbar.scss";
 
 export default function Nav(props) {
-  let [valid, setValid] = useState(false);
-
   return (
     <div className={props.loaded ? "nav" : "noShow"}>
       <div className="list">
         <NavLink
           exact
           to={
-            valid
+            props.verified // verfication //
               ? process.env.PUBLIC_URL + "/Account"
               : process.env.PUBLIC_URL + "/Login"
           }

@@ -13,6 +13,16 @@ import Pass from "./Account-pass";
 import Pic from "./Account-pic";
 
 function App() {
+  let [verified, setVerification] = useState(false);
+
+  if (verified) {
+    return <Authenticated setVerification={setVerification} />;
+  } else {
+    return <Unauthenticated setVerification={setVerification} />;
+  }
+}
+
+function Authenticated(props) {
   let [loaded, setLoaded] = useState(false);
 
   window.addEventListener("load", event => {
@@ -23,31 +33,102 @@ function App() {
     <div>
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + "/"}>
-          <Home loaded={loaded} />
+          <Home
+            loaded={loaded}
+            verified={true}
+            setVerification={props.setVerification}
+          />
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Vote"}>
-          <Vote loaded={loaded} />
+          <Vote
+            loaded={loaded}
+            verified={true}
+            setVerification={props.setVerification}
+          />
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Download"}>
           <div>page in progess</div>
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Account"}>
-          <Account loaded={loaded} />
-        </Route>
-        <Route exact path={process.env.PUBLIC_URL + "/Login"}>
-          <Login loaded={loaded} />
+          <Account
+            loaded={loaded}
+            verified={true}
+            setVerification={props.setVerification}
+          />
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Donate"}>
           <div>page in progess</div>
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Register"}>
-          <Register loaded={loaded} />
+          <Register
+            loaded={loaded}
+            verified={true}
+            setVerification={props.setVerification}
+          />
+        </Route>
+        <Route exact path={process.env.PUBLIC_URL + "/Donate"}></Route>
+      </Switch>
+    </div>
+  );
+}
+
+function Unauthenticated(props) {
+  let [loaded, setLoaded] = useState(false);
+
+  window.addEventListener("load", event => {
+    setLoaded(true);
+  });
+
+  return (
+    <div>
+      <Switch>
+        <Route exact path={process.env.PUBLIC_URL + "/"}>
+          <Home
+            loaded={loaded}
+            verified={false}
+            setVerification={props.setVerification}
+          />
+        </Route>
+        <Route exact path={process.env.PUBLIC_URL + "/Vote"}>
+          <Vote
+            loaded={loaded}
+            verified={false}
+            setVerification={props.setVerification}
+          />
+        </Route>
+        <Route exact path={process.env.PUBLIC_URL + "/Download"}>
+          <div>page in progess</div>
+        </Route>
+        <Route exact path={process.env.PUBLIC_URL + "/Login"}>
+          <Login
+            loaded={loaded}
+            verified={false}
+            setVerification={props.setVerification}
+          />
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Donate"}>
-          <Pass loaded={loaded} />
+          <div>page in progess</div>
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Register"}>
-          <Pic loaded={loaded} />
+          <Register
+            loaded={loaded}
+            verified={false}
+            setVerification={props.setVerification}
+          />
+        </Route>
+        <Route exact path={process.env.PUBLIC_URL + "/Donate"}>
+          <Pass
+            loaded={loaded}
+            verified={false}
+            setVerification={props.setVerification}
+          />
+        </Route>
+        <Route exact path={process.env.PUBLIC_URL + "/Register"}>
+          <Pic
+            loaded={loaded}
+            verified={false}
+            setVerification={props.setVerification}
+          />
         </Route>
       </Switch>
     </div>

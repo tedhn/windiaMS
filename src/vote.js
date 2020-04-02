@@ -54,7 +54,7 @@ export default function Vote(props) {
         <path d="M15 33H60V39H15V33Z" fill="#07171D" />
         <path d="M15 48H60V54H15V48Z" fill="#07171D" />
       </svg>
-      <Nav loaded={props.loaded} />
+      <Nav loaded={props.loaded} verified={props.verified} />
       <div className="vote">
         <div className="background">
           <div className="blur"></div>

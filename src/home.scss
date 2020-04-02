@@ -61,7 +61,8 @@
         }
 
         .title {
-          font-size: 52px;
+          font-family: "Patrick Hand", cursive;
+          font-size: 64px;
           font-weight: 600;
           letter-spacing: 5px;
           margin-bottom: 20px;
@@ -69,14 +70,14 @@
         }
 
         .subtitle {
-          font-size: 24px;
-          font-weight: 500;
+          font-size: 20px;
+          font-weight: 400;
           margin-bottom: 20px;
         }
 
         .subtitle2 {
           font-size: 18px;
-          font-weight: 300;
+          font-weight: 200;
         }
       }
     }
@@ -249,6 +250,37 @@
             background: #41819a;
           }
         }
+      }
+    }
+
+    .footer {
+      background: black;
+      color: white;
+      height: 150px;
+      width: 100vw;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0 200px;
+
+        .a {
+          color: white;
+          text-align: center;
+          width: 100px;
+          font-weight: 700;
+          margin: 50px auto;
+          text-decoration: none;
+
+          &:hover {
+            color: #ffb52c;
+          }
+        }
+      }
+      .rights {
+        text-align: center;
+        font-weight: 200;
       }
     }
   }

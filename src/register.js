@@ -4,6 +4,8 @@ import AOS from "aos";
 import "./register.scss";
 import Nav from "./navbar";
 
+import { NavLink } from "react-router-dom";
+
 export default function Register(props) {
   let [toggle, setToggle] = useState(false);
 
@@ -41,7 +43,6 @@ export default function Register(props) {
 
   return (
     <div className="container">
-      {" "}
       <svg
         className="hamburger"
         onClick={clickerinos}
@@ -55,7 +56,7 @@ export default function Register(props) {
         <path d="M15 33H60V39H15V33Z" fill="#07171D" />
         <path d="M15 48H60V54H15V48Z" fill="#07171D" />
       </svg>
-      <Nav loaded={props.loaded} />
+      <Nav loaded={props.loaded} verified={props.verified} />
       <div className="register">
         <div className="background">
           <div className="blur"></div>
@@ -95,7 +96,14 @@ export default function Register(props) {
               data-aos="fade-up"
               data-aos-anchor=".password"
             >
-              Already have an account ? Log in <span>here</span>
+              Already have an account ? Log in{" "}
+              <NavLink
+                exact
+                to={process.env.PUBLIC_URL + "/Login"}
+                className="a"
+              >
+                <span>here</span>
+              </NavLink>
             </div>
           </div>
         </div>
