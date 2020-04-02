@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef79453bd8f209585216bffb3549d5cc",
+    "revision": "6d3bf51883bd8a0fbcb1641db5b3ad80",
     "url": "/windiaMS/index.html"
   },
   {
-    "revision": "be9004fdf02217eceb8f",
-    "url": "/windiaMS/static/css/main.3e212e4c.chunk.css"
+    "revision": "f18153d182ddca6f3a30",
+    "url": "/windiaMS/static/css/main.85162653.chunk.css"
   },
   {
-    "revision": "8c028b63d69dc40eea72",
-    "url": "/windiaMS/static/js/2.8a1d8400.chunk.js"
+    "revision": "1d6ee6dcf85ff6532f32",
+    "url": "/windiaMS/static/js/2.ce96eee0.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/windiaMS/static/js/2.8a1d8400.chunk.js.LICENSE.txt"
+    "url": "/windiaMS/static/js/2.ce96eee0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "be9004fdf02217eceb8f",
-    "url": "/windiaMS/static/js/main.7b349a00.chunk.js"
+    "revision": "f18153d182ddca6f3a30",
+    "url": "/windiaMS/static/js/main.d66ba15a.chunk.js"
   },
   {
     "revision": "5e6c6a8a3b1c33b455d1",
