@@ -12,3 +12,7 @@ Fixed more nav bar issues hehehe
 
 #### 3/26/2020
 Added animations
+
+#### 4/2/2020
+Added footer
+Added more functions to navbar
