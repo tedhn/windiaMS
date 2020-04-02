@@ -9,8 +9,6 @@ import Vote from "./vote";
 import Login from "./login";
 import Register from "./register";
 import Account from "./Account";
-import Pass from "./Account-pass";
-import Pic from "./Account-pic";
 
 function App() {
   let [verified, setVerification] = useState(false);
