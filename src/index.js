@@ -115,14 +115,10 @@ function Unauthenticated(props) {
           />
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Donate"}>
-          <Pass
-            loaded={loaded}
-            verified={false}
-            setVerification={props.setVerification}
-          />
+          <div>Page in progress</div>
         </Route>
         <Route exact path={process.env.PUBLIC_URL + "/Register"}>
-          <Pic
+          <Register
             loaded={loaded}
             verified={false}
             setVerification={props.setVerification}
