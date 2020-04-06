@@ -72,12 +72,12 @@ export default function Nav(props) {
         >
           <div className="item">Donate</div>
         </NavLink>
-        <NavLink exact to={"https://forum.windia.me/index.php"}>
+        <a href={"https://forum.windia.me/index.php"}>
           <div className="item">Forum</div>
-        </NavLink>
-        <NavLink exact to={"https://discordapp.com/invite/Y4DqUKb"}>
+        </a>
+        <a href={"https://discordapp.com/invite/Y4DqUKb"}>
           <div className="item">Discord</div>
-        </NavLink>
+        </a>
       </div>
     </div>
   );

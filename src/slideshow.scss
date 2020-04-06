@@ -1,0 +1,46 @@
+.slideshow {
+  height: 700px;
+  width: 100vw;
+  display: flex;
+  .right {
+    position: relative;
+    top: 50%;
+    float: right;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(190, 190, 190);
+    transition: background-color 0.8s;
+
+    &:hover {
+      background-color: rgb(53, 53, 53);
+    }
+  }
+
+  .left {
+    position: relative;
+    top: 50%;
+    float: left;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(190, 190, 190);
+    transition: background-color 0.8s;
+
+    &:hover {
+      background-color: rgb(53, 53, 53);
+    }
+  }
+
+  .image {
+    grid-row: 1;
+    margin: auto;
+    height: 700px;
+    user-select: none;
+    display: none;
+
+    &.show {
+      display: block;
+    }
+  }
+}

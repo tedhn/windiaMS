@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import anime from "animejs";
 import AOS from "aos";
 import Nav from "./navbar";
-import "./donate.scss";
+import "./download.scss";
 
-export default function Donate(props) {
+export default function Download(props) {
   let [toggle, setToggle] = useState(false);
 
   const timeline = anime.timeline({
@@ -26,7 +26,7 @@ export default function Donate(props) {
   useEffect(() => {
     timeline
       .add({
-        targets: ".donate",
+        targets: ".download",
         translateX: toggle ? -300 : 0,
       })
       .add(
@@ -55,32 +55,31 @@ export default function Donate(props) {
       </svg>
       <Nav loaded={props.loaded} verified={props.verified} />
 
-      <div className="donate">
+      <div className="download">
         <div className="background"></div>
         <div className="blur"></div>
 
         <div className="text">
           <div className="title" data-aos="fade-down">
-            Donate to Windia
+            Download windia today!
           </div>
           <div className="subtitle" data-aos="fade-down">
-            Credits can be used to redeem various benefits in-game.
+            You will need to run our patcher in an empty directory to get the
+            game data files.
           </div>
           <div className="subtitle2" data-aos="fade-down">
-            After purchasing credits, wait up to 5 minutes and check your email
-            inbox.
+            Use the patcher to receive game updates
           </div>
           <div className="subtitle3" data-aos="fade-down">
-            All purchases of credits are final and cannot be refunded. Attempted
-            chargebacks will lead to accounts being permanently banned with no
-            chance of returning.
+            Note: If you face any issues, make sure to add the game's directory
+            to your antivirus' (Windows Defender counts!) exclusions.
           </div>
           <div
             className="button"
             data-aos="fade-up"
             data-aos-anchor=".subtitle3"
           >
-            <div>Donate</div>
+            <div>Download</div>
           </div>
         </div>
       </div>

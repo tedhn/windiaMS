@@ -4,6 +4,7 @@ import anime from "animejs";
 import "./Account.scss";
 
 import Nav from "./navbar";
+import { NavLink } from "react-router-dom";
 
 export default function Account(props) {
   let [toggle, setToggle] = useState(false);
@@ -13,7 +14,7 @@ export default function Account(props) {
 
   const timeline = anime.timeline({
     duration: 700,
-    easing: "easeOutExpo"
+    easing: "easeOutExpo",
   });
 
   const clickerinos = () => {
@@ -39,73 +40,107 @@ export default function Account(props) {
     timeline
       .add({
         targets: ".account",
-        translateX: toggle ? -300 : 0
+        translateX: toggle ? -300 : 0,
       })
       .add(
         {
           targets: ".hamburger",
           translateX: toggle ? -300 : 0,
-          rotate: toggle ? -90 : 0
+          rotate: toggle ? -90 : 0,
         },
         "-=700"
       );
   }, [toggle, timeline]);
 
-  if (main) {
-    return (
-      <div className="container">
-        <svg
-          className="hamburger"
-          onClick={clickerinos}
-          width="50"
-          height="50"
-          viewBox="0 0 75 75"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M15 18H60V24H15V18Z" fill="#07171D" />
-          <path d="M15 33H60V39H15V33Z" fill="#07171D" />
-          <path d="M15 48H60V54H15V48Z" fill="#07171D" />
-        </svg>
-        <Nav loaded={props.loaded} verified={props.verified} />
-        <div className="account">
-          <div className="background">
-            <div className="blur"></div>
-          </div>
-          <div className="panel">
-            <Main goPass={goPass} goPic={goPic} />
-          </div>
-        </div>
-      </div>
-    );
-  } else if (pass) {
-    return (
-      <div className="container">
-        <svg
-          className="hamburger"
-          onClick={clickerinos}
-          width="50"
-          height="50"
-          viewBox="0 0 75 75"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M15 18H60V24H15V18Z" fill="#07171D" />
-          <path d="M15 33H60V39H15V33Z" fill="#07171D" />
-          <path d="M15 48H60V54H15V48Z" fill="#07171D" />
-        </svg>
-        <Nav loaded={props.loaded} verified={props.verified} />
-        <div className="account">
-          <div className="background">
-            <div className="blur"></div>
-          </div>
-          <div className="panel">
-            <Pass goMain={goMain} />
+  if (props.verified) {
+    if (main) {
+      return (
+        <div className="container">
+          <svg
+            className="hamburger"
+            onClick={clickerinos}
+            width="50"
+            height="50"
+            viewBox="0 0 75 75"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M15 18H60V24H15V18Z" fill="#07171D" />
+            <path d="M15 33H60V39H15V33Z" fill="#07171D" />
+            <path d="M15 48H60V54H15V48Z" fill="#07171D" />
+          </svg>
+          <Nav loaded={props.loaded} verified={props.verified} />
+          <div className="account">
+            <div className="background">
+              <div className="blur"></div>
+            </div>
+            <div className="panel">
+              <Main
+                goPass={goPass}
+                goPic={goPic}
+                username={props.username}
+                setVerification={props.setVerification}
+              />
+            </div>
           </div>
         </div>
-      </div>
-    );
-  } else if (pic) {
+      );
+    } else if (pass) {
+      return (
+        <div className="container">
+          <svg
+            className="hamburger"
+            onClick={clickerinos}
+            width="50"
+            height="50"
+            viewBox="0 0 75 75"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M15 18H60V24H15V18Z" fill="#07171D" />
+            <path d="M15 33H60V39H15V33Z" fill="#07171D" />
+            <path d="M15 48H60V54H15V48Z" fill="#07171D" />
+          </svg>
+          <Nav loaded={props.loaded} verified={props.verified} />
+          <div className="account">
+            <div className="background">
+              <div className="blur"></div>
+            </div>
+            <div className="panel">
+              <Pass goMain={goMain} />
+            </div>
+          </div>
+        </div>
+      );
+    } else if (pic) {
+      return (
+        <div className="container">
+          <svg
+            className="hamburger"
+            onClick={clickerinos}
+            width="50"
+            height="50"
+            viewBox="0 0 75 75"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M15 18H60V24H15V18Z" fill="#07171D" />
+            <path d="M15 33H60V39H15V33Z" fill="#07171D" />
+            <path d="M15 48H60V54H15V48Z" fill="#07171D" />
+          </svg>
+          <Nav loaded={props.loaded} verified={props.verified} />
+          <div className="account">
+            <div className="background">
+              <div className="blur"></div>
+            </div>
+            <div className="panel">
+              <Pic goMain={goMain} />
+            </div>
+          </div>
+        </div>
+      );
+    }
+  } else {
     return (
       <div className="container">
         <svg
@@ -127,7 +162,7 @@ export default function Account(props) {
             <div className="blur"></div>
           </div>
           <div className="panel">
-            <Pic goMain={goMain} />
+            <Error />
           </div>
         </div>
       </div>
@@ -135,20 +170,39 @@ export default function Account(props) {
   }
 }
 
-function Main(props) {
+function Error() {
   return (
     <div className="main">
-      <div className="title">Welcome username!</div>
+      <div className="title">Please log into your account.</div>
+      <NavLink exact to={process.env.PUBLIC_URL + "/Login"} className="a">
+        <div className="button">
+          <div>Log in</div>
+        </div>
+      </NavLink>
+    </div>
+  );
+}
+
+function Main(props) {
+  const logout = () => {
+    props.setVerification(false);
+  };
+
+  return (
+    <div className="main">
+      <div className="title">Welcome {props.username}</div>
       <div className="subtitle">You currently have 0 Vote points.</div>
-      <div className="subtitle2">
-        Associated email: **************@gmail.com
-      </div>
+      <div className="subtitle2">Associated email: {props.email}</div>
       <div className="button">
         <div className="p">
           <div onClick={props.goPass}>Reset Password</div>
         </div>
         <div className="p">
           <div onClick={props.goPic}>Reset PIC</div>
+        </div>
+
+        <div className="p">
+          <div onClick={logout}>Log Out</div>
         </div>
       </div>
     </div>
