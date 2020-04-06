@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d3bf51883bd8a0fbcb1641db5b3ad80",
+    "revision": "be494d7c0ec2090bfe6dafac18477d0a",
     "url": "/windiaMS/index.html"
   },
   {
-    "revision": "f18153d182ddca6f3a30",
-    "url": "/windiaMS/static/css/main.85162653.chunk.css"
+    "revision": "07790f48d5af2d4526fa",
+    "url": "/windiaMS/static/css/main.2123ddc2.chunk.css"
   },
   {
-    "revision": "1d6ee6dcf85ff6532f32",
-    "url": "/windiaMS/static/js/2.ce96eee0.chunk.js"
+    "revision": "040786f10f55b33285c1",
+    "url": "/windiaMS/static/js/2.8bed44eb.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/windiaMS/static/js/2.ce96eee0.chunk.js.LICENSE.txt"
+    "url": "/windiaMS/static/js/2.8bed44eb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f18153d182ddca6f3a30",
-    "url": "/windiaMS/static/js/main.d66ba15a.chunk.js"
+    "revision": "07790f48d5af2d4526fa",
+    "url": "/windiaMS/static/js/main.eedd72ff.chunk.js"
   },
   {
     "revision": "5e6c6a8a3b1c33b455d1",
@@ -40,6 +40,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/windiaMS/static/media/background4.f49c4e7e.jpg"
   },
   {
+    "revision": "a92acf4ef928a10fd2b4ae1e2712fb42",
+    "url": "/windiaMS/static/media/background5.a92acf4e.jpg"
+  },
+  {
+    "revision": "1c56cbfa76256831510bab92523853d5",
+    "url": "/windiaMS/static/media/background6.1c56cbfa.jpg"
+  },
+  {
     "revision": "30747af1acec9aaa59a608e48e54dc11",
     "url": "/windiaMS/static/media/background7.30747af1.jpg"
   },
@@ -53,6 +61,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "1d1129544e60b9fff0d7f4f2824a14a8",
-    "url": "/windiaMS/static/media/ss.1d112954.png"
+    "url": "/windiaMS/static/media/ss1.1d112954.png"
+  },
+  {
+    "revision": "8599d5b47687bf86c872c7498b3fc33d",
+    "url": "/windiaMS/static/media/ss2.8599d5b4.png"
+  },
+  {
+    "revision": "3cbcf2bad7c444ceec59d86a4d3b2c75",
+    "url": "/windiaMS/static/media/ss3.3cbcf2ba.png"
   }
 ]);
