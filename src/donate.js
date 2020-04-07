@@ -56,8 +56,9 @@ export default function Donate(props) {
       <Nav loaded={props.loaded} verified={props.verified} />
 
       <div className="donate">
-        <div className="background"></div>
-        <div className="blur"></div>
+        <div className="background">
+          <div className="blur"></div>
+        </div>
 
         <div className="text">
           <div className="title" data-aos="fade-down">

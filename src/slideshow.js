@@ -14,8 +14,8 @@ export default function Slideshow() {
   const goPre = () => {
     let num = count - 1;
 
-    if (num < 1) {
-      setCount(3);
+    if (num < 0) {
+      setCount(2);
     } else {
       setCount(num);
     }
@@ -25,7 +25,6 @@ export default function Slideshow() {
   };
 
   useEffect(() => {
-    console.log(count);
     if (count === 0) {
       setOne(true);
       setTwo(false);
@@ -39,7 +38,7 @@ export default function Slideshow() {
       setTwo(false);
       setThree(true);
     }
-  });
+  }, [count]);
 
   return (
     <div className="slideshow">
@@ -57,9 +56,21 @@ export default function Slideshow() {
           fill="#ffffff"
         />
       </svg>
-      <img className={one ? "image show" : "image"} src={ss1} />
-      <img className={two ? "image show" : "image"} src={ss2} />
-      <img className={three ? "image show" : "image"} src={ss3} />
+      <img
+        className={one ? "image" : "image hide"}
+        src={ss1}
+        alt="haha where da pics"
+      />
+      <img
+        className={two ? "image" : "image hide"}
+        src={ss2}
+        alt="haha where da pics"
+      />
+      <img
+        className={three ? "image" : "image hide"}
+        src={ss3}
+        alt="haha where da pics"
+      />
       <svg
         className="right"
         width="75"

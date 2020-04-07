@@ -33,14 +33,17 @@
   }
 
   .image {
-    grid-row: 1;
     margin: auto;
     height: 700px;
     user-select: none;
-    display: none;
+    opacity: 1;
+    transition: opacity 0.8s ease;
 
-    &.show {
-      display: block;
+    &.hide {
+      opacity: 0;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

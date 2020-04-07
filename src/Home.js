@@ -9,7 +9,6 @@ import { NavLink } from "react-router-dom";
 
 export default function Home(props) {
   let [toggle, setToggle] = useState(false);
-  let [image, setImage] = useState("'./images/ss.png'");
 
   AOS.init({
     duration: 700,
@@ -81,7 +80,8 @@ export default function Home(props) {
           <div className="title">Welcome to Windia!!</div>
           <div className="subtitle">A MapleStory v83 Private Server</div>
           <div className="subtitle2">
-            Custome Rates / Custome Features / Mac Compatible
+            <span> Custome Rates </span> / <span> Custome Features </span>/
+            <span> Mac Compatible </span>
           </div>
         </div>
       </div>
@@ -113,7 +113,7 @@ export default function Home(props) {
           </ul>
         </div>
 
-        <div className="title" data-aos="fade-down">
+        <div className="title s" data-aos="fade-down">
           <div>Screenshots</div>
         </div>
 
@@ -137,17 +137,26 @@ export default function Home(props) {
 
         <div className="footer">
           <ul>
-            <NavLink exact to={process.env.PUBLIC_URL + "/"} className="a">
+            <a
+              href="https://forum.windia.me/index.php?threads/frequently-asked-questions.13/"
+              className="a"
+            >
               FAQ
-            </NavLink>
+            </a>
 
-            <NavLink exact to={process.env.PUBLIC_URL + "/"} className="a">
+            <a
+              href="https://forum.windia.me/index.php?threads/windias-terms-of-service.12/"
+              className="a"
+            >
               ToS & Rules
-            </NavLink>
+            </a>
 
-            <NavLink exact to={process.env.PUBLIC_URL + "/"} className="a">
+            <a
+              href="https://forum.windia.me/index.php?forums/guides.24/"
+              className="a"
+            >
               Guides
-            </NavLink>
+            </a>
 
             <NavLink exact to={process.env.PUBLIC_URL + "/Vote"} className="a">
               Vote for Us

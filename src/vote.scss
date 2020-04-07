@@ -24,7 +24,7 @@
           url("./images/background4.jpg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: cover;
         background-attachment: fixed;
 
         .blur {
@@ -38,6 +38,7 @@
             url("./images/background4.jpg");
           background-position: center;
           background-repeat: no-repeat;
+          background-size: cover;
           background-attachment: fixed;
           filter: blur(5px);
         }
