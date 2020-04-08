@@ -64,23 +64,31 @@ export default function Donate(props) {
           <div className="title" data-aos="fade-down">
             Donate to Windia
           </div>
-          <div className="subtitle" data-aos="fade-down">
-            Credits can be used to redeem various benefits in-game.
+          <div
+            className="subtitle"
+            data-aos="fade-down"
+            data-aos-anchor=".title"
+          >
+            Credits can be used for in-game benefits
           </div>
-          <div className="subtitle2" data-aos="fade-down">
+          <div
+            className="subtitle2"
+            data-aos="fade-down"
+            data-aos-anchor=".title"
+          >
             After purchasing credits, wait up to 5 minutes and check your email
             inbox.
           </div>
-          <div className="subtitle3" data-aos="fade-down">
-            All purchases of credits are final and cannot be refunded. Attempted
-            chargebacks will lead to accounts being permanently banned with no
-            chance of returning.
-          </div>
           <div
-            className="button"
-            data-aos="fade-up"
-            data-aos-anchor=".subtitle3"
+            className="subtitle3"
+            data-aos="fade-down"
+            data-aos-anchor=".title"
           >
+            <span>Note : </span>All purchases of credits are final and cannot be
+            refunded. Attempted chargebacks will lead to accounts being
+            permanently banned with no chance of returning.
+          </div>
+          <div className="button" data-aos="fade-up" data-aos-anchor=".title">
             <div>Donate</div>
           </div>
         </div>

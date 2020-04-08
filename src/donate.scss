@@ -39,7 +39,7 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        filter: blur(5px);
+        filter: blur(2px);
       }
     }
 
@@ -53,28 +53,32 @@
 
       .title {
         font-size: 52px;
-        font-weight: 700;
+        font-weight: 400;
         letter-spacing: 5px;
         margin-bottom: 50px;
       }
 
       .subtitle {
         font-size: 24px;
-        font-weight: 500;
+        font-weight: 600;
         margin-bottom: 20px;
       }
 
       .subtitle2 {
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 600;
         padding-bottom: 20px;
       }
       .subtitle3 {
         width: 80%;
         margin: auto;
         font-size: 12px;
-        font-weight: 900;
+        font-weight: 600;
         padding-bottom: 50px;
+
+        span {
+          font-weight: 900;
+        }
       }
       .button {
         background: #305f72;
@@ -99,6 +103,43 @@
 
         &:hover {
           background: #41819a;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) {
+  .container {
+    .hamburger {
+      right: 20px;
+    }
+
+    .donate {
+      .text {
+        width: 90%;
+        .title {
+          font-size: 26px;
+          margin-bottom: 25px;
+        }
+
+        .subtitle {
+          font-size: 12px;
+
+          span {
+            font-size: 12px;
+          }
+        }
+        .subtitle2 {
+          font-size: 12px;
+        }
+
+        .button {
+          height: 50px;
+          width: 100px;
+
+          div {
+            font-size: 16px;
+          }
         }
       }
     }

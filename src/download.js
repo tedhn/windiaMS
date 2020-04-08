@@ -62,24 +62,32 @@ export default function Download(props) {
 
         <div className="text">
           <div className="title" data-aos="fade-down">
-            Download windia today!
+            Download windia
           </div>
-          <div className="subtitle" data-aos="fade-down">
+          <div
+            className="subtitle"
+            data-aos="fade-down"
+            data-aos-anchor=".title"
+          >
             You will need to run our patcher in an empty directory to get the
             game data files.
           </div>
-          <div className="subtitle2" data-aos="fade-down">
+          <div
+            className="subtitle2"
+            data-aos="fade-down"
+            data-aos-anchor=".title"
+          >
             Use the patcher to receive game updates
           </div>
-          <div className="subtitle3" data-aos="fade-down">
+          <div
+            className="subtitle3"
+            data-aos="fade-down"
+            data-aos-anchor=".title"
+          >
             Note: If you face any issues, make sure to add the game's directory
             to your antivirus' (Windows Defender counts!) exclusions.
           </div>
-          <div
-            className="button"
-            data-aos="fade-up"
-            data-aos-anchor=".subtitle3"
-          >
+          <div className="button" data-aos="fade-up" data-aos-anchor=".title">
             <div>Download</div>
           </div>
         </div>

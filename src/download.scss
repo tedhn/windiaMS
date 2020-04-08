@@ -75,8 +75,11 @@
         width: 70%;
         margin: auto;
         font-size: 12px;
-        font-weight: 900;
+        font-weight: 400;
         padding-bottom: 50px;
+        span {
+          font-weight: 900;
+        }
       }
       .button {
         background: #305f72;
@@ -101,6 +104,42 @@
 
         &:hover {
           background: #41819a;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    .hamburger {
+      right: 20px;
+    }
+
+    .download {
+      .text {
+        width: 90%;
+        .title {
+          font-size: 26px;
+          margin-bottom: 25px;
+        }
+
+        .subtitle {
+          font-size: 12px;
+        }
+        .subtitle2 {
+          font-size: 12px;
+        }
+        .subtitle3 {
+          font-size: 12px;
+        }
+        .button {
+          height: 50px;
+          width: 80px;
+
+          div {
+            font-size: 14px;
+          }
         }
       }
     }

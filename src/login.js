@@ -104,6 +104,7 @@ export default function Login(props) {
                 className="username"
                 placeholder="Username"
                 data-aos="fade-left"
+                data-aos-anchor=".text"
                 type="text"
                 onChange={updateUsername}
               />
@@ -111,6 +112,7 @@ export default function Login(props) {
                 className="password"
                 placeholder="Password"
                 data-aos="fade-left"
+                data-aos-anchor=".text"
                 type="password"
                 onChange={updatePassword}
               />
@@ -118,17 +120,13 @@ export default function Login(props) {
               <div
                 className="button"
                 data-aos="fade-up"
-                data-aos-anchor=".password"
+                data-aos-anchor=".text"
                 onClick={checkvalid}
               >
                 <div>Log In</div>
               </div>
 
-              <div
-                className="link"
-                data-aos="fade-up"
-                data-aos-anchor=".password"
-              >
+              <div className="link" data-aos="fade-up" data-aos-anchor=".text">
                 Dont have an account ? Register
                 <NavLink
                   exact

@@ -77,7 +77,7 @@ export default function Home(props) {
           data-aos-mirror="false"
         >
           <div className="image"></div>
-          <div className="title">Welcome to Windia!!</div>
+          <div className="title">Welcome to Windia!</div>
           <div className="subtitle">A MapleStory v83 Private Server</div>
           <div className="subtitle2">
             <span> Custome Rates </span> / <span> Custome Features </span>/
@@ -106,7 +106,7 @@ export default function Home(props) {
             <li>
               Skills revamped for the sake of fun, and balancing purposes.
             </li>
-            <li>Damage skins !!! </li>
+            <li>Damage skins</li>
             <li>Buffed monsters and bosses.</li>
             <li>255 Level Cap</li>
             <li>Our very own Ironman mode and job</li>
@@ -123,7 +123,7 @@ export default function Home(props) {
 
         <div className="invite" data-aos="fade-up">
           <div className="text">So what are you waiting for ?</div>
-          <div className="text2">Start your adventure today!!</div>
+          <div className="text2">Start your adventure today!</div>
           <NavLink
             className="a"
             exact

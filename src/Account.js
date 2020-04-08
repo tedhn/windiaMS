@@ -193,7 +193,7 @@ function Main(props) {
       <div className="title">Welcome {props.username}</div>
       <div className="subtitle">You currently have 0 Vote points.</div>
       <div className="subtitle2">Associated email: {props.email}</div>
-      <div className="button">
+      <div className="button m">
         <div className="p">
           <div onClick={props.goPass}>Reset Password</div>
         </div>
@@ -212,7 +212,7 @@ function Main(props) {
 function Pass(props) {
   return (
     <div className="main">
-      <div className="title">Welcome username!</div>
+      <div className="title">Change your password</div>
       <div className="panel2">
         <input className="input" placeholder="Current Password" />
         <input className="input" placeholder="New Password" />
@@ -234,7 +234,7 @@ function Pass(props) {
 function Pic(props) {
   return (
     <div className="main">
-      <div className="title">Welcome username!</div>
+      <div className="title">Change your PIC</div>
 
       <div className="panel2">
         <input className="input" placeholder="Current PIC" />

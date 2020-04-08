@@ -1,21 +1,34 @@
-@media only screen and (min-width: 600px) {
-  .container {
-    .hamburger {
-      position: fixed;
-      top: 20px;
-      right: 50px;
-      z-index: 3;
-      cursor: pointer;
-    }
+.container {
+  .hamburger {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    z-index: 3;
+    cursor: pointer;
+  }
 
-    .vote {
-      width: 100vw;
+  .vote {
+    width: 100vw;
+    height: 100vh;
+
+    .background {
+      position: absolute;
       height: 100vh;
+      width: 100vw;
+      background: linear-gradient(
+          0deg,
+          rgba(252, 249, 234, 0.5),
+          rgba(252, 249, 234, 0.5)
+        ),
+        url("./images/background4.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
 
-      .background {
-        position: absolute;
-        height: 100vh;
-        width: 100vw;
+      .blur {
+        height: 100%;
+        width: 100%;
         background: linear-gradient(
             0deg,
             rgba(252, 249, 234, 0.5),
@@ -26,78 +39,101 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        filter: blur(2px);
+      }
+    }
 
-        .blur {
-          height: 100%;
-          width: 100%;
-          background: linear-gradient(
-              0deg,
-              rgba(252, 249, 234, 0.5),
-              rgba(252, 249, 234, 0.5)
-            ),
-            url("./images/background4.jpg");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-attachment: fixed;
-          filter: blur(5px);
+    .text {
+      height: auto;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .title {
+        font-size: 52px;
+        font-weight: 400;
+        letter-spacing: 5px;
+        margin-bottom: 50px;
+      }
+
+      .subtitle {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        span {
+          font-size: 24px;
+          font-weight: 900;
         }
       }
 
-      .text {
-        height: auto;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      .subtitle2 {
+        font-size: 13px;
+        font-weight: 600;
+        padding-bottom: 50px;
+      }
 
+      .button {
+        background: #305f72;
+        box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5),
+          9px 9px 16px rgba(48, 95, 114, 0.5);
+        border-radius: 5px;
+        margin: auto;
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+
+        div {
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 30px;
+          color: #ffffff;
+        }
+
+        &:hover {
+          background: #41819a;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    .hamburger {
+      right: 20px;
+    }
+
+    .vote {
+      .text {
+        width: 90%;
         .title {
-          font-size: 52px;
-          font-weight: 600;
-          letter-spacing: 5px;
-          margin-bottom: 20px;
+          font-size: 26px;
+          margin-bottom: 25px;
         }
 
         .subtitle {
-          font-size: 24px;
-          font-weight: 500;
-          margin-bottom: 20px;
-        }
-
-        .subtitle2 {
-          font-size: 18px;
-          font-weight: 500;
-          padding-bottom: 50px;
+          font-size: 12px;
 
           span {
-            font-weight: 800;
+            font-size: 12px;
           }
+        }
+        .subtitle2 {
+          font-size: 12px;
         }
 
         .button {
-          background: #305f72;
-          box-shadow: -9px -9px 12px rgba(255, 255, 255, 0.5),
-            9px 9px 16px rgba(48, 95, 114, 0.5);
-          border-radius: 5px;
-          margin: auto;
-          width: 100px;
           height: 50px;
-          cursor: pointer;
+          width: 100px;
 
           div {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-weight: 800;
-            font-size: 18px;
-            line-height: 30px;
-            color: #ffffff;
-          }
-
-          &:hover {
-            background: #41819a;
+            font-size: 14px;
           }
         }
       }

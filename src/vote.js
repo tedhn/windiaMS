@@ -9,14 +9,14 @@ export default function Vote(props) {
 
   const timeline = anime.timeline({
     duration: 700,
-    easing: "easeOutExpo"
+    easing: "easeOutExpo",
   });
 
   AOS.init({
     duration: 700,
     easing: "ease",
     mirror: true,
-    anchorPlacement: "top-bottom"
+    anchorPlacement: "top-bottom",
   });
 
   const clickerinos = () => {
@@ -27,13 +27,13 @@ export default function Vote(props) {
     timeline
       .add({
         targets: ".vote",
-        translateX: toggle ? -300 : 0
+        translateX: toggle ? -300 : 0,
       })
       .add(
         {
           targets: ".hamburger",
           translateX: toggle ? -300 : 0,
-          rotate: toggle ? -90 : 0
+          rotate: toggle ? -90 : 0,
         },
         "-=700"
       );
@@ -64,17 +64,21 @@ export default function Vote(props) {
           <div className="title" data-aos="fade-down">
             Vote for Windia
           </div>
-          <div className="subtitle" data-aos="fade-down">
-            You do not need to be logged off while voting for us!
-          </div>
-          <div className="subtitle2" data-aos="fade-down">
+          <div
+            className="subtitle"
+            data-aos="fade-down"
+            data-aos-anchor=".title"
+          >
             You can vote up to <span>3 times</span> per day.
           </div>
           <div
-            className="button"
-            data-aos="fade-up"
-            data-aos-anchor=".subtitle2"
+            className="subtitle2"
+            data-aos="fade-down"
+            data-aos-anchor=".title"
           >
+            You do not need to be logged off while voting for us!
+          </div>
+          <div className="button" data-aos="fade-up" data-aos-anchor=".title">
             <div>Vote</div>
           </div>
         </div>
