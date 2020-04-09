@@ -26,3 +26,7 @@ Added more functions to navbar
 
 Added download / donate page
 Linked all the pages
+
+#### 4/8/2020
+
+Added Mobile version
