@@ -6,8 +6,10 @@
 }
 
 body {
-  overflow-x: hidden;
   font-family: "Muli", sans-serif;
+}
+#root {
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

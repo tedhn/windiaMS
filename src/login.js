@@ -35,7 +35,7 @@ export default function Login(props) {
   };
 
   const checkvalid = () => {
-    if (props.username === "htehnd" && password === "incorrect") {
+    if (props.username === "" && password === "") {
       setMsg("Logged in!");
       setValid(true);
       props.setVerification(true);
