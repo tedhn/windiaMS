@@ -5,6 +5,10 @@
     right: 50px;
     z-index: 3;
     cursor: pointer;
+
+    &.open {
+      padding: 49vh;
+    }
   }
 
   .home {
@@ -96,7 +100,7 @@
     }
 
     .title {
-      background: #ffffff;
+      background: white;
       grid-column: 1 / span 2;
       height: 100px;
       margin: auto;
@@ -137,7 +141,7 @@
       margin: auto auto auto 0;
 
       ul {
-        background: #ffffff;
+        background: white;
         box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.5),
           12px 12px 16px rgba(188, 206, 216, 0.5);
         border-radius: 5px;

@@ -109,14 +109,14 @@ export default function Register(props) {
             <input
               className="username"
               placeholder="Username"
-              data-aos="fade-right"
+              data-aos="fade-right"data-aos-anchor=".text"
               onChange={updateUsername}
             />
             <input
               className="password"
               placeholder="Password"
               type="password"
-              data-aos="fade-right"
+              data-aos="fade-right"data-aos-anchor=".text"
               onChange={updatePassword}
             />
             <input
@@ -124,21 +124,21 @@ export default function Register(props) {
               type="password"
               placeholder="Confirm Password"
               data-aos="fade-right"
-              data-aos-anchor=".password"
+              data-aos-anchor=".text"
               onChange={updateCPassword}
             />
             <input
               className="email"
               placeholder="Email"
               data-aos="fade-right"
-              data-aos-anchor=".password"
+              data-aos-anchor=".text"
               onChange={updateEmail}
             />
 
             <div
               className="button"
               data-aos="fade-up"
-              data-aos-anchor=".password"
+              data-aos-anchor=".text"
               onClick={checkvalid}
             >
               <div>Sign up</div>
@@ -146,7 +146,7 @@ export default function Register(props) {
             <div
               className="link"
               data-aos="fade-up"
-              data-aos-anchor=".password"
+              data-aos-anchor=".text"
             >
               Already have an account ? Log in
               <NavLink
